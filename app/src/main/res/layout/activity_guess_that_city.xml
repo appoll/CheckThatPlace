@@ -1,0 +1,252 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff0"
+    android:orientation="horizontal">
+
+
+    <com.google.vrtoolkit.cardboard.CardboardView
+        android:id="@+id/cardboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+
+    </com.google.vrtoolkit.cardboard.CardboardView>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <fragment
+
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map1"
+            android:name="com.google.android.gms.maps.MapFragment"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".GuessThatCityActivity" />
+
+        <LinearLayout
+            android:id="@+id/menu_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="-10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#88000000"
+                android:padding="10dp"
+                android:text="WHICH CITY IS THIS?"
+                android:textColor="#ccffffff"
+
+                android:textSize="12sp" />
+
+
+            <Button
+                android:id="@+id/btn_1_left"
+
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:text="London"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_2_left"
+
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:text="Berlin"
+                android:textSize="12sp" />
+
+
+            <Button
+                android:id="@+id/btn_3_left"
+
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:text="Moscow"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_4_left"
+
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:text="Washington"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wrong_1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="#c22"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="WRONG"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="30sp">
+
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/correct_1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="#2c2"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="CORRECT"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="30sp">
+
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <fragment
+
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map2"
+            android:name="com.google.android.gms.maps.MapFragment"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".GuessThatCityActivity" />
+
+        <LinearLayout
+            android:id="@+id/menu_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#88000000"
+                android:padding="10dp"
+                android:text="WHICH CITY IS THIS?"
+                android:textColor="#ccffffff"
+
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_1_right"
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:text="London"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_2_right"
+
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:text="Berlin"
+                android:textSize="12sp" />
+
+
+            <Button
+                android:id="@+id/btn_3_right"
+
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:text="Moscow"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_4_right"
+
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:text="Washington"
+                android:textSize="12sp" />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/wrong_2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="#c22"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="WRONG"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="30sp">
+
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/correct_2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="#2c2"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="CORRECT"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="30sp">
+
+
+            </TextView>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
